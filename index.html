@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#050505">
   <meta name="color-scheme" content="dark">
-  <title>1985 Hoodie — Hood Late Night (HLN)</title>
-  <meta name="description" content="The 1985 hoodie by Hood Late Night (HLN). Black fishnet/stretch-mesh hoodie with a small gold 1985 mark. $99 pre-order. Only 50 made. Ships 6–8 weeks after the drop closes.">
+  <title>1985 Merch — Hood Late Night (HLN)</title>
+  <meta name="description" content="1985 merch from Hood Late Night (HLN): the 1985 hoodie, socks, and bandana. Hoodie $99 pre-order, only 50 made. Socks $20. Bandana $18.">
   <link rel="canonical" href="https://kimwilly2327.github.io/">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/favicon.png">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hood Late Night">
-  <meta property="og:title" content="1985 Hoodie — Hood Late Night (HLN)">
-  <meta property="og:description" content="Black fishnet/stretch-mesh hoodie with a small gold 1985 mark. $99 pre-order. Only 50 made. Ships 6–8 weeks after the drop closes.">
+  <meta property="og:title" content="1985 Merch — Hood Late Night (HLN)">
+  <meta property="og:description" content="The 1985 hoodie, socks, and bandana from Hood Late Night (HLN). Hoodie $99 pre-order, only 50 made. Socks $20. Bandana $18.">
   <meta property="og:url" content="https://kimwilly2327.github.io/">
   <meta property="og:image" content="https://kimwilly2327.github.io/images/og.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Mockup of the black 1985 fishnet hoodie with a small gold 1985 chest mark.">
+  <meta property="og:image:alt" content="Mockup of the black 1985 fishnet hoodie. 1985 merch from Hood Late Night: hoodie, socks, and bandana.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="1985 Hoodie — Hood Late Night (HLN)">
-  <meta name="twitter:description" content="Black fishnet/stretch-mesh hoodie with a small gold 1985 mark. $99 pre-order. Only 50 made. Ships 6–8 weeks after the drop closes.">
+  <meta name="twitter:title" content="1985 Merch — Hood Late Night (HLN)">
+  <meta name="twitter:description" content="The 1985 hoodie, socks, and bandana from Hood Late Night (HLN). Hoodie $99 pre-order, only 50 made. Socks $20. Bandana $18.">
   <meta name="twitter:image" content="https://kimwilly2327.github.io/images/og.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,6 +64,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
       padding: 1rem 0 0.75rem;
     }
     .brand {
@@ -77,6 +78,15 @@
     }
     .brand:hover { color: var(--gold); }
     .brand span { color: var(--muted); letter-spacing: 0.14em; font-weight: 500; }
+    .nav-shop {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .nav-shop:hover { color: var(--gold); }
 
     .hero {
       display: grid;
@@ -114,13 +124,15 @@
       text-transform: uppercase;
       color: var(--gold);
     }
-    h1 {
-      margin: 0 0 0.85rem;
+    h1, h2 {
       font-family: var(--font-serif);
       font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    h1 {
+      margin: 0 0 0.85rem;
       font-size: clamp(2.6rem, 12vw, 4.6rem);
       line-height: 0.92;
-      letter-spacing: -0.02em;
     }
     h1 em {
       display: block;
@@ -180,7 +192,7 @@
       gap: 0;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
-      margin: 0.4rem 0 0;
+      margin: 1.15rem 0 0;
     }
     .facts div {
       padding: 1rem 0;
@@ -196,11 +208,87 @@
     }
     .facts span { color: var(--muted); font-size: 0.92rem; }
 
+    .shop {
+      padding: 0.5rem 0 2.75rem;
+    }
+    .shop-head {
+      margin: 0 0 1.25rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 1.25rem 0 0.45rem;
+      font-size: clamp(1.8rem, 6vw, 2.6rem);
+      line-height: 1.05;
+    }
+    .shop-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      max-width: 32rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: #080808;
+      border: 1px solid var(--line);
+    }
+    .card.soon {
+      opacity: 0.82;
+    }
+    .card figure img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 1rem 1rem 1.15rem;
+      flex: 1;
+    }
+    .card h3 {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .card .amount {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin: 0 0 0.55rem;
+    }
+    .card .buy { margin-top: auto; }
+    .soon-label {
+      margin: 0.15rem 0 0;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: 1fr;
       gap: 0.75rem;
       padding: 0 0 3rem;
+    }
+    .gallery-label {
+      margin: 0 0 0.85rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
     }
     .gallery figure img {
       aspect-ratio: 4 / 5;
@@ -231,7 +319,7 @@
         grid-template-columns: 1.15fr 0.85fr;
         gap: 3rem;
         align-items: center;
-        min-height: min(86vh, 760px);
+        min-height: min(82vh, 700px);
         padding: 1rem 0 3rem;
       }
       .hero figure img { aspect-ratio: 4 / 5; object-position: center 15%; }
@@ -242,8 +330,9 @@
         border-right: 1px solid var(--line);
       }
       .facts div:last-child { border-right: 0; padding-right: 0; }
+      .grid { grid-template-columns: 1fr 1fr 1fr; gap: 1.15rem; }
       .gallery { grid-template-columns: 1fr 1fr; gap: 1rem; padding-bottom: 4rem; }
-      .buy { width: auto; min-width: 16.5rem; }
+      .hero .buy, .sticky-buy .buy { width: auto; min-width: 16.5rem; }
       .sticky-buy { display: none; }
       footer { padding-bottom: 3rem; }
     }
@@ -253,6 +342,7 @@
   <div class="wrap">
     <header>
       <a class="brand" href="https://www.twitch.tv/thehoodlatenightshow">Hood Late Night <span>· HLN</span></a>
+      <a class="nav-shop" href="#shop">Shop</a>
     </header>
 
     <section class="hero">
@@ -286,7 +376,47 @@
       </div>
     </section>
 
-    <section class="gallery" aria-label="More mockup photos">
+    <section class="shop" id="shop">
+      <div class="shop-head">
+        <p class="kicker">1985 merch</p>
+        <h2>More from the drop</h2>
+        <p class="shop-note">Socks and bandana ship with the 1985 drop.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <figure>
+            <img src="images/tile-socks.jpg" width="800" height="1000" alt="1985 Socks typographic card in black and gold.">
+          </figure>
+          <div class="card-body">
+            <h3>1985 Socks</h3>
+            <p class="amount">$20</p>
+            <a class="buy" href="https://buy.stripe.com/5kQ5kEb8obhed6P5IAfMA04">Buy — $20</a>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="images/tile-bandana.jpg" width="800" height="1000" alt="1985 Bandana typographic card in black and gold.">
+          </figure>
+          <div class="card-body">
+            <h3>1985 Bandana</h3>
+            <p class="amount">$18</p>
+            <a class="buy" href="https://buy.stripe.com/8x24gA3FWbhe1o7db2fMA05">Buy — $18</a>
+          </div>
+        </article>
+        <article class="card soon">
+          <figure>
+            <img src="images/tile-hats.jpg" width="800" height="1000" alt="1985 Hats typographic card. Coming soon.">
+          </figure>
+          <div class="card-body">
+            <h3>1985 Hats</h3>
+            <p class="soon-label">Coming soon</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <p class="gallery-label">Hoodie details</p>
+    <section class="gallery" aria-label="More hoodie mockup photos">
       <figure>
         <img src="images/hoodie-mark.jpg" width="800" height="860" alt="Mockup close-up of the small gold 1985 mark on the black fishnet hoodie.">
         <figcaption class="mock-tag">mockup</figcaption>
@@ -304,7 +434,7 @@
   </div>
 
   <div class="sticky-buy">
-    <a class="buy" href="https://buy.stripe.com/dRmfZifoEbhefeX9YQfMA00">Pre-order — $99</a>
+    <a class="buy" href="https://buy.stripe.com/dRmfZifoEbhefeX9YQfMA00">Hoodie pre-order — $99</a>
   </div>
 </body>
 </html>

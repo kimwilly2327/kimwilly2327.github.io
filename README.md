@@ -1,9 +1,12 @@
-# 1985 Hoodie — Hood Late Night (HLN)
+# 1985 Merch — Hood Late Night (HLN)
 
-Public product page for the 1985 hoodie pre-order.
+Public merch shop for the 1985 drop.
 
 Live site: https://kimwilly2327.github.io/
 
-Buy link (Stripe): https://buy.stripe.com/dRmfZifoEbhefeX9YQfMA00
+- 1985 Hoodie, $99 pre-order: https://buy.stripe.com/dRmfZifoEbhefeX9YQfMA00
+- 1985 Socks, $20: https://buy.stripe.com/5kQ5kEb8obhed6P5IAfMA04
+- 1985 Bandana, $18: https://buy.stripe.com/8x24gA3FWbhe1o7db2fMA05
+- 1985 Hats: coming soon
 
-Photos on the page are mockups. There is no physical sample yet.
+Hoodie photos are mockups. Socks, bandana, and hats use typographic tiles (no product photos on file).
