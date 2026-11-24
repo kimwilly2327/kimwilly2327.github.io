@@ -1,0 +1,25 @@
+name: Decode and commit images
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode images
+        run: python3 scripts/decode-images.py
+      - name: Commit images if they changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/*.jpg images/*.png
+          if git diff --cached --quiet; then
+            echo "No image changes to commit"
+          else
+            git commit -m "Add decoded hoodie images for the product page"
+            git push
+          fi
